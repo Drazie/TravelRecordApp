@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{30D820B9-9D4F-429C-85E3-0562DFBA3568}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelRecordApp/TravelRecordApp.csproj">
+    <Files>
+      <File FileName="TravelRecordApp/TravelRecordApp.csproj" Line="17" Column="34" />
+      <File FileName="TravelRecordApp/MapPage.xaml.cs" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/Microsoft.Common.CurrentVersion.targets" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TravelRecordApp" expanded="True" selected="True">
+            <Node name="TravelRecordApp" expanded="True">
+              <Node name="MapPage.xaml" expanded="True" />
+              <Node name="NewTravelPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TravelRecordApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
