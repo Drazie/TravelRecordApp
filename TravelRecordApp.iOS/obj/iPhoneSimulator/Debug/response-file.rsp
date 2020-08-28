@@ -2,17 +2,17 @@
 --sgen-conc
 /target-framework:Xamarin.iOS,Version=v1.0
 --http-message-handler=NSUrlSessionHandler
---cache=/Users/imac/Projects/TravelRecordApp/TravelRecordApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache
---root-assembly=/Users/imac/Projects/TravelRecordApp/TravelRecordApp.iOS/bin/iPhoneSimulator/Debug/TravelRecordApp.iOS.exe
+--cache=/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache
+--root-assembly=/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.iOS/bin/iPhoneSimulator/Debug/TravelRecordApp.iOS.exe
 --sdkroot=/Applications/Xcode.app/Contents/Developer
---sim=/Users/imac/Projects/TravelRecordApp/TravelRecordApp.iOS/bin/iPhoneSimulator/Debug/TravelRecordApp.iOS.app
+--sim=/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.iOS/bin/iPhoneSimulator/Debug/TravelRecordApp.iOS.app
 --executable=TravelRecordApp.iOS
 --nolink
 --sdk=13.6
 --targetver=8.0
 --aot-options=-O=-float32
 --abi=x86_64
---symbollist=/Users/imac/Projects/TravelRecordApp/TravelRecordApp.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list
+--symbollist=/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list
 --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
@@ -21,7 +21,7 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll
--r=/Users/imac/Projects/TravelRecordApp/TravelRecordApp/bin/Debug/netstandard2.0/TravelRecordApp.dll
+-r=/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/bin/Debug/netstandard2.0/TravelRecordApp.dll
 -r=/Users/imac/.nuget/packages/xamarin.forms/4.6.0.1141/buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/Microsoft.Win32.Primitives.dll
@@ -218,5 +218,5 @@
 -r=/Users/imac/.nuget/packages/xamarin.forms/4.6.0.1141/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/imac/.nuget/packages/xamarin.forms.maps/4.5.0.356/lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll
 -r=/Users/imac/.nuget/packages/xamarin.forms.maps/4.5.0.356/lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll
--r=/Users/imac/Projects/TravelRecordApp/TravelRecordApp/bin/Debug/netstandard2.0/TravelRecordApp.dll
+-r=/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/bin/Debug/netstandard2.0/TravelRecordApp.dll
 -r=/Users/imac/.nuget/packages/xamarin.forms/4.6.0.1141/buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.dll

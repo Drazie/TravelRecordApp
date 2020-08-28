@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using TravelRecordApp.Model;
 
 namespace TravelRecordApp.Logic
@@ -16,12 +17,16 @@ namespace TravelRecordApp.Logic
         {
             List<Venue> venues = new List<Venue>();
 
-            var url = Venue.GenerateURL(latitude, longitude);
+            var url = VenueRoot.GenerateURL(latitude, longitude);
 
             using (HttpClient client = new HttpClient())
             {
                 var response = await client.GetAsync(url);
-                var json = response.Content.ReadAsStringAsync();
+                var json = await response.Content.ReadAsStringAsync();
+
+                var venueRoot = JsonConvert.DeserializeObject<VenueRoot>(json);
+
+                venues = venueRoot.response.venues as List<Venue>;
             }
 
 

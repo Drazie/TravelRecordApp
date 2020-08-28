@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g2YAb7Kx+LED1xGrWdI5M9No7VoF/z8xM0SH7tPR+7LDP33y33gbxD93xinyV5w4aJHY1Y0aeTNOL9j64x/+EA==",
+  "dgSpecHash": "ZLyqYy5wWNbhz7rnBYtsRYbmr3t1igOyKDsxNqAdd49fLXWDmShw9JIb0yq6c6+JiZao1c3vID2dnzSTsbBiaQ==",
   "success": true,
-  "projectFilePath": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj",
+  "projectFilePath": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj",
   "expectedPackageFiles": [
     "/Users/imac/.nuget/packages/microsoft.bcl/1.1.10/microsoft.bcl.1.1.10.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.bcl.build/1.0.14/microsoft.bcl.build.1.0.14.nupkg.sha512",

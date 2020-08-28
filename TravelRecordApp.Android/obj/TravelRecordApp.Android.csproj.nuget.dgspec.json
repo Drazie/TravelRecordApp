@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/imac/Projects/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj": {}
+    "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj": {}
   },
   "projects": {
-    "/Users/imac/Projects/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj": {
+    "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj",
+        "projectUniqueName": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj",
         "projectName": "TravelRecordApp.Android",
-        "projectPath": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj",
+        "projectPath": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj",
         "packagesPath": "/Users/imac/.nuget/packages/",
-        "outputPath": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp.Android/obj/",
+        "outputPath": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/imac/Projects/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj": {
-                "projectPath": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj"
+              "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj": {
+                "projectPath": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "/Users/imac/Projects/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj": {
+    "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj",
+        "projectUniqueName": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj",
         "projectName": "TravelRecordApp",
-        "projectPath": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj",
+        "projectPath": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/TravelRecordApp.csproj",
         "packagesPath": "/Users/imac/.nuget/packages/",
-        "outputPath": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp/obj/",
+        "outputPath": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/imac/.config/NuGet/NuGet.Config"
@@ -109,8 +109,10 @@
               "version": "[2.2.29, )"
             },
             "NETStandard.Library": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.3, )"
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             },
             "Newtonsoft.Json": {
               "target": "Package",

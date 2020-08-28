@@ -1,14 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1JEYD6xydmykkOjy9vOjCFPizD+Qt9aOrpFzebNknlgYeRmFrvdJ0r9+p7I7AdtQrV+Nuxe9nCUPWQaqhOyKYw==",
+  "dgSpecHash": "WCehzIOrX2JQ85Ai7wB37uxH0d1EIHGdCBLuhWBLsTBFhAYcDRGZVS+OW5M8KWYywhn+98twzlTdo+5NJG7eeA==",
   "success": true,
-  "projectFilePath": "/Users/imac/Projects/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj",
+  "projectFilePath": "/Users/imac/Desktop/TravelRecordApp/TravelRecordApp.Android/TravelRecordApp.Android.csproj",
   "expectedPackageFiles": [
     "/Users/imac/.nuget/packages/microsoft.bcl/1.1.10/microsoft.bcl.1.1.10.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.bcl.build/1.0.14/microsoft.bcl.build.1.0.14.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.net.http/2.2.29/microsoft.net.http.2.2.29.nupkg.sha512",
-    "/Users/imac/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/Users/imac/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
     "/Users/imac/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/imac/.nuget/packages/plugin.currentactivity/2.1.0.4/plugin.currentactivity.2.1.0.4.nupkg.sha512",
     "/Users/imac/.nuget/packages/plugin.permissions/6.0.1/plugin.permissions.6.0.1.nupkg.sha512",

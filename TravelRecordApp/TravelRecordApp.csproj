@@ -17,9 +17,8 @@
     <PackageReference Include="Xamarin.Forms.Maps" Version="4.8.0.1269" />
     <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
     <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
-    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="MainPage %28copy%29.xaml.cs" />
@@ -34,5 +33,17 @@
     <Folder Include="Model\" />
     <Folder Include="Helpers\" />
     <Folder Include="Logic\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\plane.png" />
+    <None Remove="Assets\Images\razor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\plane.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Images\razor.png" />
   </ItemGroup>
 </Project>

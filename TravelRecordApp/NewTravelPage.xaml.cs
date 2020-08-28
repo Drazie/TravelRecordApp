@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Plugin.Geolocator;
 using SQLite;
 using TravelRecordApp.Logic;
@@ -18,24 +19,46 @@ namespace TravelRecordApp
 
         void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
         {
-            Post post = new Post()
-            {
-                Experience = experienceEntry.Text
-            };
 
-            using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
+            try
             {
-                conn.CreateTable<Post>();
-                int rows = conn.Insert(post);
+                var selectedVenue = venueListView.SelectedItem as Venue;
+                var firstCategory = selectedVenue.categories.FirstOrDefault();
 
-                if (rows > 0)
+                Post post = new Post()
                 {
-                    DisplayAlert("Success", "Experience succesfully inserted", "Ok");
-                }
-                else
+                    Experience = experienceEntry.Text,
+                    CategoryId = firstCategory.id,
+                    CategoryName = firstCategory.name,
+                    Address = selectedVenue.location.address,
+                    Distance = selectedVenue.location.distance,
+                    Latitude = selectedVenue.location.lat,
+                    Longitude = selectedVenue.location.lng,
+                    VenueName = selectedVenue.name
+                };
+
+                using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
                 {
-                    DisplayAlert("Failure", "Experience failed to be inserted", "Ok");
+                    conn.CreateTable<Post>();
+                    int rows = conn.Insert(post);
+
+                    if (rows > 0)
+                    {
+                        DisplayAlert("Success", "Experience succesfully inserted", "Ok");
+                    }
+                    else
+                    {
+                        DisplayAlert("Failure", "Experience failed to be inserted", "Ok");
+                    }
                 }
+            }
+            catch (NullReferenceException nre)
+            {
+                DisplayAlert("Error", "404", "Cancel");
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Error", "Something went wrong", "Cancel");
             }
 
         }
@@ -47,7 +70,9 @@ namespace TravelRecordApp
             var locator = CrossGeolocator.Current;
             var position = await locator.GetPositionAsync();
 
-            var venues = VenueLogic.GetVenues(position.Latitude, position.Longitude);
+            var venues = await VenueLogic.GetVenues(position.Latitude, position.Longitude);
+
+            venueListView.ItemsSource = venues;
         }
     }
 }
