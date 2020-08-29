@@ -8,25 +8,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TravelRecordApp.ProfilePage.xaml", "ProfilePage.xaml", typeof(global::TravelRecordApp.ProfilePage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TravelRecordApp.NewTravelPage.xaml", "NewTravelPage.xaml", typeof(global::TravelRecordApp.NewTravelPage))]
 
 namespace TravelRecordApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ProfilePage.xaml")]
-    public partial class ProfilePage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("NewTravelPage.xaml")]
+    public partial class NewTravelPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label postCountLabel;
+        private global::Xamarin.Forms.Entry experienceEntry;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView namesListView;
+        private global::Xamarin.Forms.ListView venueListView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ProfilePage));
-            postCountLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "postCountLabel");
-            namesListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "namesListView");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(NewTravelPage));
+            experienceEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "experienceEntry");
+            venueListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "venueListView");
         }
     }
 }
