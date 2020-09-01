@@ -3,13 +3,15 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TravelRecordApp" expanded="True" selected="True">
+          <Node name="TravelRecordApp" expanded="True">
             <Node name="TravelRecordApp" expanded="True">
               <Node name="Model" expanded="True" />
               <Node name="App.xaml" expanded="True" />
-              <Node name="HistoryPage.xaml" expanded="True" />
-              <Node name="HomePage.xaml" expanded="True" />
-              <Node name="ProfilePage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="NewTravelPage.xaml" expanded="True">
+                <Node name="NewTravelPage.xaml.cs" selected="True" />
+              </Node>
+              <Node name="RegisterPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -20,7 +22,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/imac/Desktop/TravelRecordApp/TravelRecordApp/NewTravelPage.xaml.cs" relfile="TravelRecordApp/NewTravelPage.xaml.cs" line="58" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

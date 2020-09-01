@@ -17,7 +17,7 @@ namespace TravelRecordApp
             InitializeComponent();
         }
 
-        void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
+        async void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
         {
 
             try
@@ -34,10 +34,12 @@ namespace TravelRecordApp
                     Distance = selectedVenue.location.distance,
                     Latitude = selectedVenue.location.lat,
                     Longitude = selectedVenue.location.lng,
-                    VenueName = selectedVenue.name
+                    VenueName = selectedVenue.name,
+                    UserId = App.user.Id
                 };
 
-                using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
+                /*
+                 * using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
                 {
                     conn.CreateTable<Post>();
                     int rows = conn.Insert(post);
@@ -51,14 +53,21 @@ namespace TravelRecordApp
                         DisplayAlert("Failure", "Experience failed to be inserted", "Ok");
                     }
                 }
+                */
+
+                await App.client.GetTable<Post>().InsertAsync(post);
+                await DisplayAlert("Success", "Experience succesfully inserted", "Ok");
+
+
+
             }
             catch (NullReferenceException nre)
             {
-                DisplayAlert("Error", "404", "Cancel");
+                await DisplayAlert("Failure", "Experience failed to be inserted", "Ok");
             }
             catch (Exception ex)
             {
-                DisplayAlert("Error", "Something went wrong", "Cancel");
+                await DisplayAlert("Failure", "Experience failed to be inserted", "Ok");
             }
 
         }

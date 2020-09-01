@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TravelRecordApp.Model;
 using TravelRecordApp.Models;
 using Xamarin.Forms;
 
@@ -20,8 +21,9 @@ namespace TravelRecordApp
             
         }
 
-        void LoginButton_Clicked(System.Object sender, System.EventArgs e)
+        private async void LoginButton_Clicked(System.Object sender, System.EventArgs e)
         {
+
             bool isEmailEmpty = string.IsNullOrEmpty(emailEntry.Text);
             bool isPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
 
@@ -31,8 +33,31 @@ namespace TravelRecordApp
             }
             else
             {
-                Navigation.PushAsync(new HomePage());
+                var user = (await App.client.GetTable<Users>().Where(u => u.Email == emailEntry.Text).ToListAsync()).FirstOrDefault();
+
+                if (user != null)
+                {
+                    App.user = user;
+                    if (user.Password == passwordEntry.Text)
+                    {
+                        await Navigation.PushAsync(new HomePage());
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "Email or password are incorrect", "Try again");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Error", "There was an error logging you in", "Try again");
+                }
+
             }
+        }
+
+        private void signUpButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new RegisterPage());
         }
     }
 }
