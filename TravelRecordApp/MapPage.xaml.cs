@@ -77,6 +77,7 @@ namespace TravelRecordApp
 
             GetLocation();
 
+            /*
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
             {
                 conn.CreateTable<Post>();
@@ -84,6 +85,10 @@ namespace TravelRecordApp
 
                 DisplayInMap(posts);
             }
+            */
+
+            var posts = await App.client.GetTable<Post>().Where(p => p.UserId == App.user.Id).ToListAsync();
+            DisplayInMap(posts);
 
         }
 

@@ -3,6 +3,20 @@
     <ContentPage.Content>
         <StackLayout>
             <Entry x:Name="experienceEntry"/>
+            <Label Text=""
+                   x:Name="venueLabel"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   Margin="5, 20, 0, 0"/>
+            <Label Text=""
+                   x:Name="categoryLabel"
+                   Style="{StaticResource blueColor}"/>
+            <Label Text=""
+                   x:Name="addressLabel"
+                   FontSize="15"/>
+            <Label Text=""
+                   x:Name="distanceLabel"
+                   FontSize="15"/>
             <Button Text="Update"
                     x:Name="updateButton"
                     Clicked="updateButton_Clicked"/>
