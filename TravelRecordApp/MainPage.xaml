@@ -22,5 +22,10 @@
                 Clicked="LoginButton_Clicked"
                 Margin="0, 50, 0, 0"
                 Style="{StaticResource normalButton}"/>
+    <Button Text="Sign up"
+                x:Name="signUpButton"
+                Clicked="signUpButton_Clicked"
+                HorizontalOptions="End"
+                Style="{StaticResource normalButton}"/>
     </StackLayout>
 </ContentPage>
