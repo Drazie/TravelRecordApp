@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Plugin.Geolocator;
 using SQLite;
-using TravelRecordApp.Logic;
 using TravelRecordApp.Model;
 
 using Xamarin.Forms;
@@ -55,7 +54,7 @@ namespace TravelRecordApp
                 }
                 */
 
-                await App.client.GetTable<Post>().InsertAsync(post);
+                Post.Insert(post);
                 await DisplayAlert("Success", "Experience succesfully inserted", "Ok");
 
 

@@ -26,6 +26,6 @@
                 x:Name="signUpButton"
                 Clicked="signUpButton_Clicked"
                 HorizontalOptions="End"
-                Style="{StaticResource normalButton}"/>
+                Style="{StaticResource borderButton}"/>
     </StackLayout>
 </ContentPage>
