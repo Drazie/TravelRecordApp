@@ -5,14 +5,16 @@
         <State name="__root__">
           <Node name="TravelRecordApp" expanded="True">
             <Node name="TravelRecordApp" expanded="True">
-              <Node name="Model" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="Users.cs" selected="True" />
+              </Node>
               <Node name="HistoryPage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
               <Node name="MapPage.xaml" expanded="True" />
               <Node name="NewTravelPage.xaml" expanded="True" />
-              <Node name="PostDetailPage.xaml" expanded="True">
-                <Node name="PostDetailPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="PostDetailPage.xaml" expanded="True" />
               <Node name="ProfilePage.xaml" expanded="True" />
+              <Node name="RegisterPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>

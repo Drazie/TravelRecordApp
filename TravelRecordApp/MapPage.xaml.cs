@@ -87,7 +87,7 @@ namespace TravelRecordApp
             }
             */
 
-            var posts = await App.client.GetTable<Post>().Where(p => p.UserId == App.user.Id).ToListAsync();
+            var posts = await Post.Read();
             DisplayInMap(posts);
 
         }

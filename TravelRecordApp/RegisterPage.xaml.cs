@@ -29,11 +29,11 @@ namespace TravelRecordApp
 
                 };
 
-                await App.client.GetTable<Users>().InsertAsync(user);
+                Users.Register(user);
             }
             else
             {
-                DisplayAlert("Error", "Passwords do not match", "OK");
+                await DisplayAlert("Error", "Passwords do not match", "OK");
             }
         }
     }
