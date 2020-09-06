@@ -22,21 +22,9 @@ namespace TravelRecordApp
             //{
             //var postTable = conn.Table<Post>().ToList();
 
-            var postTable = await App.client.GetTable<Post>().Where(p => p.UserId == App.user.Id).ToListAsync();
+            var postTable = await Post.Read();
 
-            var venuesNames = (from p in postTable
-                                  orderby p.CategoryId
-                                  select p.VenueName).Distinct().ToList();
-
-                Dictionary<string, int> namesCount = new Dictionary<string, int>();
-                foreach (var name in venuesNames)
-                {
-                    var count = (from post in postTable
-                                 where post.VenueName == name
-                                 select post).ToList().Count;
-
-                    namesCount.Add(name, count);
-                }
+            var namesCount = Post.PostCategories(postTable);
 
                 namesListView.ItemsSource = namesCount;
 

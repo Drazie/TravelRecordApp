@@ -24,34 +24,15 @@ namespace TravelRecordApp
         private async void LoginButton_Clicked(System.Object sender, System.EventArgs e)
         {
 
-            bool isEmailEmpty = string.IsNullOrEmpty(emailEntry.Text);
-            bool isPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
+            bool canLogin = await Users.Login(emailEntry.Text, passwordEntry.Text);
 
-            if(isEmailEmpty || isPasswordEmpty)
+            if (canLogin)
             {
-
+                await Navigation.PushAsync(new HomePage());
             }
             else
             {
-                var user = (await App.client.GetTable<Users>().Where(u => u.Email == emailEntry.Text).ToListAsync()).FirstOrDefault();
-
-                if (user != null)
-                {
-                    App.user = user;
-                    if (user.Password == passwordEntry.Text)
-                    {
-                        await Navigation.PushAsync(new HomePage());
-                    }
-                    else
-                    {
-                        await DisplayAlert("Error", "Email or password are incorrect", "Try again");
-                    }
-                }
-                else
-                {
-                    await DisplayAlert("Error", "There was an error logging you in", "Try again");
-                }
-
+                await DisplayAlert("Oops", "Try again", "OK");
             }
         }
 

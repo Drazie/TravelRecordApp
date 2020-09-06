@@ -4,10 +4,21 @@
         <ResourceDictionary>
             <Color x:Key="whiteColor">#f4f4f8</Color>
             <Color x:Key="blueColor">#2ab7ca</Color>
-
+            <Color x:Key="redColor">#dc143c</Color>
+            
             <Style x:Key="normalButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource blueColor}"/>
                 <Setter Property="TextColor" Value="{StaticResource whiteColor}"/>
+            </Style>
+            <Style x:Key="redButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource redColor}"/>
+                <Setter Property="TextColor" Value="{StaticResource whiteColor}"/>
+            </Style>
+            <Style x:Key="borderButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource whiteColor}"/>
+                <Setter Property="TextColor" Value="{StaticResource blueColor}"/>
+                <Setter Property="BorderWidth" Value="3"/>
+                <Setter Property="BorderColor" Value="{StaticResource blueColor}"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
